@@ -1,0 +1,100 @@
+﻿absl-py==1.3.0
+altair==4.2.0
+annoy @ file:///D:/bld/python-annoy_1667211928162/work
+astunparse==1.6.3
+attrs==22.1.0
+blinker==1.5
+cachetools==5.2.0
+certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
+charset-normalizer==2.1.1
+click==8.1.3
+colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
+commonmark==0.9.1
+contourpy @ file:///C:/b/abs_d5rpy288vc/croots/recipe/contourpy_1663827418189/work
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+decorator==5.1.1
+entrypoints==0.4
+Flask @ file:///C:/b/abs_ef16l83sif/croot/flask_1671217367534/work
+flatbuffers==22.10.26
+fonttools==4.25.0
+gast==0.4.0
+gitdb==4.0.9
+GitPython==3.1.29
+google-auth==2.14.0
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+grpcio==1.50.0
+h5py==3.7.0
+idna==3.4
+importlib-metadata==5.0.0
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
+joblib==1.2.0
+jsonschema==4.17.0
+keras==2.10.0
+Keras-Preprocessing==1.1.2
+kiwisolver @ file:///C:/b/abs_88mdhvtahm/croot/kiwisolver_1672387921783/work
+libclang==14.0.6
+Markdown==3.4.1
+MarkupSafe @ file:///C:/ci/markupsafe_1654508036328/work
+matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
+mkl-fft==1.3.6
+mkl-random @ file:///C:/Users/dev-admin/mkl/mkl_random_1682977971003/work
+mkl-service==2.4.0
+munkres==1.1.4
+numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
+oauthlib==3.2.2
+opencv-python==4.6.0.66
+opt-einsum==3.3.0
+packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
+pandas==1.5.1
+Pillow==9.4.0
+ply==3.11
+protobuf==3.19.6
+pyarrow==10.0.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pybase64==1.2.3
+pydeck==0.8.0b4
+Pygments==2.13.0
+Pympler==1.0.1
+pyparsing @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_7f_7lba6rl/croots/recipe/pyparsing_1661452540662/work
+PyQt5==5.15.7
+PyQt5-sip @ file:///C:/Windows/Temp/abs_d7gmd2jg8i/croots/recipe/pyqt-split_1659273064801/work/pyqt_sip
+pyrsistent==0.19.2
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz==2022.6
+pytz-deprecation-shim==0.1.0.post0
+requests==2.28.1
+requests-oauthlib==1.3.1
+rich==12.6.0
+rsa==4.9
+scikit-learn==1.1.3
+scipy==1.9.3
+semver==2.13.0
+sip @ file:///C:/Windows/Temp/abs_b8fxd17m2u/croots/recipe/sip_1659012372737/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+smmap==5.0.0
+streamlit==1.21.0
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.10.0
+tensorflow-estimator==2.10.0
+tensorflow-io-gcs-filesystem==0.27.0
+termcolor==2.1.0
+threadpoolctl==3.1.0
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+toolz==0.12.0
+tornado @ file:///C:/ci/tornado_1662476985533/work
+tqdm==4.64.1
+typing_extensions==4.4.0
+tzdata==2022.6
+tzlocal==4.2
+urllib3==1.26.12
+validators==0.20.0
+watchdog==2.1.9
+Werkzeug @ file:///C:/b/abs_17q5kgb8bo/croot/werkzeug_1671216014857/work
+wincertstore==0.2
+wrapt==1.14.1
+zipp==3.10.0

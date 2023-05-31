@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Compatibility settings -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOME - IMAGE SEARCH ENGINE</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='logo.jpg') }}" width = 100, height = 40> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center"><i class="fas fa-camera"></i> Search with image</h1>
+        <!-- Flash messages -->
+        <p>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul>
+                {% for message in messages %}
+                  <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            {% endwith %}
+        </p>
+
+        <!-- Display the uploaded image if available -->
+        {% if filename %}
+            <h3>QUERY IMAGE</h3>
+            <div align='center' class='center'>
+                <img src="{{ url_for('display_image', filename=filename) }}" height="350px">
+                <h6>The Indian Co </h6>
+                <p>Product name - {{ filename }}</p>
+            </div>
+        {% endif %}
+
+        <!-- Form to upload an image -->
+        <form class="p-3 text-center" method="post" action="/" enctype="multipart/form-data">
+            <input type="file" name="file" class="form-control" autocomplete="off" required>
+            <input type="submit" value="SEARCH" class="btn btn-primary">
+        </form>
+
+        <!-- Display search results if available -->
+        {% if filename %}
+            <div>
+                <h3>RESULT<h3>
+                <ul class="horizontal-list">
+                    {% for image in images %}
+                    <div class="image">
+                        <li class="center"><img src="{{ url_for('static', filename=image) }}" height="250px"></li>
+                        <h6>The Indian Co </h6>
+                        <p>Product name - INDIE </p>
+                    </div>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+</div>
+
+</body>
+</html>
